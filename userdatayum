@@ -2,10 +2,11 @@ Content-Type: text/x-shellscript; charset="us-ascii"
 MIME-Version: 1.0
 
 #!/bin/bash
-yum update  -y
+yum update -y
 yum install git wget -y
 cd /tmp
 wget http://download.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
 rpm -ivh /tmp/epel-release-6-8.noarch.rpm
+yum update -y
 yum install ansible -y
 ansible-pull  -C master -U git://github.com/igal-dahan/ansible_pull.git -vvv >> /var/log/ansible-pull.log
