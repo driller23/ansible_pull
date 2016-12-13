@@ -1,7 +1,7 @@
 - hosts: 127.0.0.1
   connection: local
   become: yes
-  user: ubuntu
+#  user: ubuntu
   tasks:
   - name: Add nginx
     apt: name=nginx update_cache=yes
