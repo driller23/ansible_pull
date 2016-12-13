@@ -6,4 +6,4 @@
   - name: Add nginx
     apt: name=nginx update_cache=yes
   - name: Start nginx service
-  - service: name=nginx state=started enabled=yes
+    service: name=nginx state=started enabled=yes
