@@ -1,0 +1,3 @@
+sudo apt-get -y update
+sudo apt-get -y install ansible git
+sudo bash -c ' ansible-pull  -C master -U git://github.com/igal-dahan/ansible_pull.git -vvv >> /var/log/ansible-pull.log 2>&1'
